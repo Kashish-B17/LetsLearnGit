@@ -1,0 +1,15 @@
+<template>
+<lightning-card  variant="Narrow"  title="Update Recordd" icon-name="standard:account">
+    <div class="slds-p-around_medium">
+         <lightning-datatable
+            key-field="Id"
+            data={contacts}
+            hide-checkbox-column
+            draft-values = {draftValues}
+            onsave = {handleSave}
+            columns={columns}
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </div>
+</lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<template>
+<lightning-card  variant="Narrow"  title="Client side Filtering" icon-name="standard:account">
+    <div class="slds-p-around_medium">
+       <table>
+  <thead>
+    <tr>
+        <template for:each={headings} for:item="heading">
+      <th key={heading}>{heading}</th>
+      </template>
+    </tr>
+  </thead>
+  <tbody>
+       <template for:each={filteredTable} for:item="data">
+       <tr key={data.Id}>
+      <td>{data.Id}</td>
+      <td>{data.Name}</td>
+      <td>{data.Title}</td>
+      <td>{data.Email}</td>
+    </tr>
+      </template>
+  </tbody>
+</table>
+    </div>
+</lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <template if:true={UserData}>
+             <div class="slds-box slds-box_xx-small">
+            User Name : {UserData.Name.value}
+            User Email : {UserData.Email.value}
+        </div>
+        </template>
+     
+        <template if:false={UserData}>
+            <div>Error</div>
+        </template>
+       
+    </lightning-card>
+</template>

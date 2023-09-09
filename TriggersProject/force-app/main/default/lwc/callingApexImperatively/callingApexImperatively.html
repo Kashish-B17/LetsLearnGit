@@ -1,0 +1,25 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Imperatively Data" icon-name="standard:account">
+        <!-- <template if:true={showButton}>
+            <lightning-button variant="brand" label="View Account Data" title="View Data" onclick={handleClick}></lightning-button>
+        </template> -->
+        
+            <div class="slds-p-around_medium">
+            <lightning-input
+            type="search"
+            onchange={searchHandler}
+            label="Search Account"
+            value={searchKey}
+            ></lightning-input>
+        </div>
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="account">
+                <div class="slds-box slds-box_xx-small" key = {account.id}>
+                    <p>Name : {account.Name}</p>
+                    <p>Type : {account.Type}</p>
+                    <p>Account Number : {account.AccountNumber}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

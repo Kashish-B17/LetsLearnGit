@@ -1,0 +1,14 @@
+.hrStyle{
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: rgb(201 199 197);
+}
+.divStyle{
+padding-bottom: 15px;
+}
+
+.slds-box buttonStyle{
+    padding: 0%;
+    margin: 2%;
+    width: 38px;
+}

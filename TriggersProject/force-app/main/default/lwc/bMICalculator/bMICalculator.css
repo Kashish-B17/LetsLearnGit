@@ -1,0 +1,104 @@
+:host {
+    --sds-c-card-color-background: #0C0D21;
+}
+
+.coloCSS{
+    background-color: #0C0D21;
+}
+
+.textColor{
+	-webkit-text-fill-color: red;
+    font-size: 112%;
+    font-weight: bold;
+}
+
+.bTagCSS{
+    margin: 31%;
+    font-size: large;
+    -webkit-text-fill-color: white;
+}
+
+.nextDiv{
+    background-color: #1D1E32;
+        margin-top: 5%;
+}
+.button {
+	margin-top: 5%;
+    margin-left: 33%;
+    background-color: #d56f79;
+    color: white;
+
+}
+
+.divColor{
+        color: #D63861;
+        margin-left: 25%;
+}
+.div2{
+    color: white;
+    margin-left: 15%;
+}
+
+.div3{
+    color: white;
+    margin-left: 23%;
+}
+
+.div4{
+    color: rgb(239, 14, 74);
+    margin-left: 37%;
+    margin-top: 4%;
+}
+
+.div5{
+     color: white;
+     margin-left: 19%;
+}
+
+
+.div6{
+     color: white;
+     margin-left: 18%;
+}
+
+
+.div7{
+     color: white;
+     margin-left: 40%
+}
+
+
+.div8{
+     color: rgb(239, 14, 74);
+     margin-left: 38%;
+      margin-top: 4%;
+}
+
+
+.div9{
+     color: white;
+     margin-left: 37%
+}
+
+
+.div10{
+     color: rgb(239, 14, 74);
+     margin-left: 41%;
+      margin-top: 4%;
+}
+
+.div11{
+     color: white;
+     margin-left: 40%;
+}
+
+.div12{
+    color: green;
+    margin-left: 30%;
+    margin-top: 4%;
+}
+
+.resultCSS{
+    color:white;
+    /* margin-left: 30%; */
+}

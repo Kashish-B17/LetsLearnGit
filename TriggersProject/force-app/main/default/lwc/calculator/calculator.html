@@ -1,0 +1,11 @@
+<template>
+<lightning-card  title="Calculator" icon-name="standard:account"> 
+    <hr class="hrStyle"></hr>
+    <div class="divStyle">Result: {result} {resultAfter} </div>
+           <div class="slds-grid slds-wrap slds-col slds-size_3-of-4 slds-p-horizontal_x-small slds-p-vertical_x-small">
+      <template for:each={optionsList} for:item="option">
+            <lightning-button key={option.label} title={option.title} label={option.label} variant={option.variant} onclick = {handleButtonselect} class="slds-box buttonStyle"></lightning-button>
+        </template>
+        </div>
+     </lightning-card>
+</template>

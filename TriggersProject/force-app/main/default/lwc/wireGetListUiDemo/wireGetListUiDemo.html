@@ -1,0 +1,35 @@
+<template>
+<lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+    <div class="slds-var-p-around_medium">
+        <div class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <table>
+             <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Title</th>
+                </tr>
+             </thead>
+             <tbody>
+                <template for:each={contacts} for:item="contact">
+                    <tr key={contact.fields.Id.value}>
+                        <td>{contact.fields.Name.value}</td>
+                        <td>{contact.fields.Email.value}</td>
+                        <td>{contact.fields.Title.value}</td>
+                    </tr>
+                </template>
+             </tbody>
+            </table>
+        </div>
+        <div class="slds-grid">
+            <div class="slds-m-around_medium">
+                <lightning-button variant="base" label="Previous" title="Previous" onclick={handlePrevious}></lightning-button>
+            </div>
+            <div class="slds-m-around_medium">
+                <lightning-button variant="base" label="Next" title="Next" onclick={handleNext}></lightning-button>
+            </div>
+        </div>
+  
+    </div>
+</lightning-card>
+</template>

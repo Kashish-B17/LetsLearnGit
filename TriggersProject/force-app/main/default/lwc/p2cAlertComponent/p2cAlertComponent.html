@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Child Alert Component">
+        <div class="slds-notify slds-notify_alert slds-alert_error" 
+        role="alert">
+        <template if:false={isvalid}>
+            <div>{message}</div>
+        </template>
+    </div>
+    </lightning-card>
+</template>

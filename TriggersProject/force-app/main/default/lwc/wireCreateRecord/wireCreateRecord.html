@@ -1,0 +1,28 @@
+<template>
+<lightning-card  variant="Narrow">
+<div class="slds-p-around_medium">
+    <template if:true={showForm}>
+           <form class="createForm">
+        <lightning-input name="FirstName" label="First Name" 
+        onchange = {changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+        <lightning-input name="LastName" label="Last Name" 
+        onchange = {changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+        <lightning-input name="Title" label="Title" 
+        onchange = {changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+        <lightning-input type ="tel" name="Phone" label="Phone" 
+        onchange = {changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+        <lightning-input type ="email" name="Email" label="Email" 
+        onchange = {changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+        <div class = "slds-m-around_small">
+              <lightning-button variant="brand" label="Save" 
+        onclick={createContact}></lightning-button>
+         <lightning-button variant="neutral" label="Cancel" 
+        onclick={handleCancel}></lightning-button>
+        </div>
+      
+    </form>
+    </template>
+ 
+</div>
+</lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Account Details" icon-name="standard:account">
+        <lightning-record-form 
+        record-id={recordId} 
+        object-api-name={objectApiName}
+        layout-type = "Compact" 
+        columns="2" 
+        onsubmit={handleSubmit}>
+    </lightning-record-form>
+    </lightning-card>
+
+</template>
